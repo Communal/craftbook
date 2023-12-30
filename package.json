@@ -1,11 +1,10 @@
 {
   "name": "communal-craftbook",
-  "version": "1.0.0-beta-0.0.3",
+  "version": "1.0.0-beta-0.0.5",
   "description": "Design System for Communal",
   "main": "./src/index.tsx",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "compile": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
     "build": "tsc"
   },
   "author": "Yash Sehgal <yashsehgal.work@gmail.com>",

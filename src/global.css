@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Importing component-level CSS */
+@import url('./components/index.css');
+
 .craftbookComponent {
   @apply tracking-tight;
 }

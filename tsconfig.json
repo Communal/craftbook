@@ -1,25 +1,18 @@
 {
   "compilerOptions": {
     "target": "es5",
-    "lib": ["dom", "es2015", "es2017"],
     "module": "esnext",
-    "moduleResolution": "node",
     "jsx": "react",
+    "sourceMap": true,
+    "outDir": "dist",
+    "strict": true,
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
-    "noEmit": true,
-    "strict": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "noImplicitReturns": true,
-    "noFallthroughCasesInSwitch": true,
-    "baseUrl": ".",
-    "paths": {
-      "*": ["types/*"],
-      "@/*": ["src/*"]
-    }
-  },
-  "include": ["src/**/*.tsx", "src/**/*.ts", "src/components/button/button.tsx"],
-  "exclude": ["node_modules"]
+    "declaration": true,
+    "declarationDir": "types",
+    "emitDeclarationOnly": true
+  }
 }

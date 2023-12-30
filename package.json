@@ -1,6 +1,6 @@
 {
   "name": "communal-craftbook",
-  "version": "1.0.0-beta-0.0.1",
+  "version": "1.0.0-beta-0.0.3",
   "description": "Design System for Communal",
   "main": "./src/index.tsx",
   "scripts": {

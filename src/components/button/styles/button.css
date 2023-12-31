@@ -8,7 +8,7 @@
 }
 
 .button-disabled {
-  @apply opacity-40 cursor-not-allowed hover:scale-100;
+  @apply opacity-40 hover:cursor-not-allowed hover:scale-100;
 }
 
 .button-primary {

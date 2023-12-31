@@ -23,7 +23,7 @@ const Button: React.FunctionComponent<ButtonProps> = ({
     <button
       className={cn(
         // default button styles
-        "craftbookComponent border flex flex-row items-center justify-center font-medium",
+        "craftbookComponent craftbookButton",
         // variant based button styles
         variant === "primary" && "button-primary",
         variant === "secondary" && "button-secondary",

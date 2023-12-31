@@ -18,6 +18,9 @@ export default {
         "activity-red-light": "#FF8181",
         "activity-red-dimmed": "#DD1818",
         "product-dark": "#2F2F2F",
+      },
+      boxShadow: {
+        "subtle": "0px 2px 4px 0px #00000008"
       }
     },
   },

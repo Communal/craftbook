@@ -19,3 +19,52 @@ export const DefaultButton: Story = {
     children: "Default Button"
   },
 };
+
+export const PrimaryButton: Story = {
+  args: {
+    children: "Primary Button",
+    variant: "primary"
+  },
+};
+
+export const SecondaryButton: Story = {
+  args: {
+    children: "Secondary Button",
+    variant: "secondary"
+  },
+};
+
+export const SolidButton: Story = {
+  args: {
+    children: "Solid Button",
+    variant: "solid"
+  },
+};
+
+export const OutlineButton: Story = {
+  args: {
+    children: "Outline Button",
+    variant: "outline"
+  },
+};
+
+export const SmallButton: Story = {
+  args: {
+    children: "Small Button",
+    size: "sm"
+  },
+};
+
+export const MediumButton: Story = {
+  args: {
+    children: "Medium Button",
+    size: "md"
+  },
+};
+
+export const LargeButton: Story = {
+  args: {
+    children: "Large Button",
+    size: "lg"
+  },
+};

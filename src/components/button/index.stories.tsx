@@ -68,3 +68,10 @@ export const LargeButton: Story = {
     size: "lg"
   },
 };
+
+export const DisabledButton: Story = {
+  args: {
+    children: "Disabled Button",
+    disabled: true
+  }
+}

@@ -1,17 +1,18 @@
 {
-  "name": "comm-craftbook",
+  "name": "craftbook",
   "private": false,
-  "version": "1.0.0",
+  "version": "1.0.1-beta-0.0.4",
+  "author": "Yash Sehgal <yashsehgal.work@gmail.com>",
   "type": "module",
   "files": [
     "dist"
   ],
-  "main": "dist/communal-craftbook-umd.cjs",
-  "module": "dist/communal-craftbook.js",
+  "main": "dist/craftbook.umd.cjs",
+  "module": "dist/craftbook.js",
   "exports": {
     ".": {
-      "import": "./dist/communal-craftbook.js",
-      "require": "./dist/communal-craftbook-umd.cjs"
+      "import": "./dist/craftbook.js",
+      "require": "./dist/craftbook.umd.cjs"
     }
   },
   "scripts": {

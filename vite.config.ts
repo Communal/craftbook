@@ -14,7 +14,7 @@ export default defineConfig({
     lib: {
       entry: path.resolve(__dirname, './src/components/index.tsx'),
       name: "Communal Craftbook",
-      fileName: "communal-craftbook",
+      fileName: "craftbook",
     },
     rollupOptions: {
       external: ['react', 'react-dom'],

@@ -1,0 +1,40 @@
+
+.craftbookButton {
+  @apply border flex flex-row items-center justify-center font-medium transition-all hover:scale-95;
+}
+
+.button-stretched {
+  @apply w-full;
+}
+
+.button-disabled {
+  @apply opacity-40 cursor-not-allowed hover:scale-100;
+}
+
+.button-primary {
+  @apply bg-product-primary text-white border-transparent hover:bg-product-primary-dimmed;
+}
+
+.button-secondary {
+  @apply bg-product-secondary text-white border-transparent hover:bg-product-secondary-dimmed;
+}
+
+.button-solid {
+  @apply bg-product-dark text-white border-transparent;
+}
+
+.button-outline {
+  @apply bg-white text-product-dark border-neutral-200 hover:bg-product-light-dimmed;
+}
+
+.button-sm {
+  @apply px-3 py-1.5 text-sm gap-1 rounded-lg;
+}
+
+.button-md {
+  @apply px-4 py-2 gap-1.5 rounded-xl;
+}
+
+.button-lg {
+  @apply px-5 py-2.5 text-lg gap-2 rounded-2xl;
+}

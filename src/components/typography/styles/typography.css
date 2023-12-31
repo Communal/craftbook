@@ -1,0 +1,89 @@
+
+/* HEADLINE STYLES */
+.craftbookHeadline {
+  @apply text-product-dark font-bold tracking-tighter;
+}
+
+.headline-lg {
+  @apply text-[60px];
+}
+
+.headline-md {
+  @apply text-[46px];
+}
+
+.headline-sm {
+  @apply text-[32px];
+}
+
+/* HEADING STYLES */
+.craftbookHeading {
+  @apply text-product-dark font-semibold tracking-tighter;
+}
+
+.heading-2xl {
+  @apply text-[32px];
+}
+
+.heading-xl {
+  @apply text-[28px];
+}
+
+.heading-lg {
+  @apply text-[24px];
+}
+
+.headling-md {
+  @apply text-[20px];
+}
+
+/* BODY TEXT STYLES */
+.craftbookBody {
+  @apply text-product-dark font-medium tracking-tight;
+}
+
+.body-lg {
+  @apply text-[20px];
+}
+
+.body-md {
+  @apply text-[18px];
+}
+
+.body-sm {
+  @apply text-[16px];
+}
+
+.body-xs {
+  @apply text-[14px];
+}
+
+/* SUBTITLE STYLES */
+.craftbookSubtitle {
+  @apply text-neutral-500 font-medium tracking-tight;
+}
+
+.subtitle-md {
+  @apply text-[16px];
+}
+
+.subtitle-sm {
+  @apply text-[14px];
+}
+
+.subtitle-xs {
+  @apply text-[12px];
+}
+
+/* UPPERCASE HEADING STYLES */
+.craftbookUppercaseHeading {
+  @apply uppercase text-[12px] font-semibold;
+}
+
+.uppercaseHeading {
+  @apply text-neutral-500;
+}
+
+.uppercaseHeading-light {
+  @apply text-neutral-400;
+}

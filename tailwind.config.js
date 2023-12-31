@@ -1,11 +1,7 @@
 /** @type {import('tailwindcss').Config} */
-module.exports = {
+export default {
   content: [
-    "./src/*.{html,js,jsx,ts,tsx,md,mdx}",
-    "./src/**/*.{html,js,jsx,ts,tsx,md,mdx}",
-    "./src/**/**/*.{html,js,jsx,ts,tsx,md,mdx}",
-    "./src/**/**/**/*.{html,js,jsx,ts,tsx,md,mdx}",
-    "./src/**/**/**/**/*.{html,js,jsx,ts,tsx,md,mdx}",
+    "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     extend: {
@@ -22,6 +18,9 @@ module.exports = {
         "activity-red-light": "#FF8181",
         "activity-red-dimmed": "#DD1818",
         "product-dark": "#2F2F2F",
+      },
+      boxShadow: {
+        "subtle": "0px 2px 4px 0px #00000008"
       }
     },
   },

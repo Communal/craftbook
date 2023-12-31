@@ -1,5 +1,7 @@
 # CraftBook - Design System for Communal
 
+![readme-banner](public/readme-banner.png)
+
 CraftBook is a versatile React component library developed with TypeScript and styled using TailwindCSS. 
 It offers a collection of reusable UI components to streamline the development of React applications.
 

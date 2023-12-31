@@ -6,6 +6,7 @@ interface CardProps extends React.HTMLAttributes<HTMLDivElement> {
   withHeader?: boolean;
   title?: string;
   subtitle?: string;
+  fit?: boolean;
 }
 
 const Card = forwardRef<HTMLDivElement, CardProps>(
@@ -15,12 +16,17 @@ const Card = forwardRef<HTMLDivElement, CardProps>(
     withHeader = false,
     title = "",
     subtitle = "",
+    fit = false,
     ...props
   }, ref) => {
     return (
       <div
         ref={ref}
-        className={cn("px-[24px] py-[18px] rounded-2xl shadow border-2 border-product-dark", className)}
+        className={cn(
+          "px-[24px] py-[18px] rounded-2xl shadow border-2 border-product-dark",
+          fit && "w-fit",
+          className
+        )}
         {...props}
       >
         {withHeader && <div className="pb-4">

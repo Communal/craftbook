@@ -1,30 +1,60 @@
-# React + TypeScript + Vite
+# CraftBook - Design System for Communal
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+CraftBook is a versatile React component library developed with TypeScript and styled using TailwindCSS. 
+It offers a collection of reusable UI components to streamline the development of React applications.
 
-Currently, two official plugins are available:
+## Getting Started
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Installation
 
-## Expanding the ESLint configuration
+You can install CraftBook using either NPM or Yarn. Here are the steps for both:
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+NPM
+```
+npm install craftbook
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+Yarn
+```
+yarn add craftbook
+```
+
+### Running Storybook
+
+CraftBook uses Storybook for component development and testing. 
+Follow these steps to run the Storybook:
+
+1. Ensure you have Node.js and npm installed on your machine.
+2. Clone the CraftBook repository:
+```
+git clone https://github.com/communal/craftbook.git
+```
+
+3. Navigate to the project directory:
+```
+cd craftbook
+```
+
+4. Install dependencies:
+```
+npm install
+```
+or
+```
+yarn
+```
+
+5. Start Storybook:
+```
+npm run storybook
+```
+or
+```
+yarn storybook
+```
+
+6. Open your browser and visit http://localhost:6006/ to view the CraftBook Storybook, where you can interactively explore and test the components.
+
+## Contributing
+
+We welcome contributions to CraftBook! If you find any issues or have suggestions for improvement, please open an issue or submit a pull request.

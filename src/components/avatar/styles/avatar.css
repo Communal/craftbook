@@ -1,0 +1,23 @@
+.craftbookAvatar {
+  @apply rounded-full flex flex-row items-center justify-center overflow-hidden bg-neutral-100 font-medium tracking-tight text-product-dark;
+}
+
+.craftbookAvatar-filled {
+  @apply bg-product-dark text-white;
+}
+
+.avatar-image {
+  @apply select-none;
+}
+
+.avatar-lg {
+  @apply text-[20px] w-[80px] h-[80px];
+}
+
+.avatar-md {
+  @apply text-[18px] w-[60px] h-[60px];
+}
+
+.avatar-sm {
+  @apply text-[14px] w-[40px] h-[40px];
+}

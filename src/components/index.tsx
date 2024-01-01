@@ -1,3 +1,4 @@
-import "../index.css";
+import '../index.css';
 export * from './button';
 export * from './typography';
+export * from './avatar';

@@ -1,4 +1,3 @@
-
 .craftbookButton {
   @apply border flex flex-row items-center justify-center font-medium transition-all hover:scale-95;
 }

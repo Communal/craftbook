@@ -1,6 +1,6 @@
-import { cn } from "@/utils";
-import { forwardRef } from "react";
-import { Heading, Subtitle } from "..";
+import { cn } from '@/utils';
+import { forwardRef } from 'react';
+import { Heading, Subtitle } from '..';
 
 interface CardProps extends React.HTMLAttributes<HTMLDivElement> {
   withHeader?: boolean;
@@ -10,39 +10,39 @@ interface CardProps extends React.HTMLAttributes<HTMLDivElement> {
 }
 
 const Card = forwardRef<HTMLDivElement, CardProps>(
-  ({
-    className,
-    children,
-    withHeader = false,
-    title = "",
-    subtitle = "",
-    fit = false,
-    ...props
-  }, ref) => {
+  (
+    {
+      className,
+      children,
+      withHeader = false,
+      title = '',
+      subtitle = '',
+      fit = false,
+      ...props
+    },
+    ref,
+  ) => {
     return (
       <div
         ref={ref}
         className={cn(
-          "px-[24px] py-[18px] rounded-2xl shadow border-2 border-product-dark",
-          fit && "w-fit",
-          className
+          'px-[24px] py-[18px] rounded-2xl shadow border-2 border-product-dark',
+          fit && 'w-fit',
+          className,
         )}
-        {...props}
-      >
-        {withHeader && <div className="pb-4">
-          {title && <Heading size="xl">{title}</Heading>}
-          {subtitle && <Subtitle size="md">{subtitle}</Subtitle>}
-        </div>}
+        {...props}>
+        {withHeader && (
+          <div className="pb-4">
+            {title && <Heading size="xl">{title}</Heading>}
+            {subtitle && <Subtitle size="md">{subtitle}</Subtitle>}
+          </div>
+        )}
         {children}
       </div>
-    )
-  }
-)
+    );
+  },
+);
 
-export {
-  Card
-}
+export { Card };
 
-export type {
-  CardProps
-}
+export type { CardProps };

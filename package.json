@@ -1,11 +1,12 @@
 {
   "name": "craftbook",
   "private": false,
-  "version": "0.0.0",
+  "version": "0.0.1-dev",
   "author": "Yash Sehgal <yashsehgal.work@gmail.com>",
   "type": "module",
   "files": [
-    "dist"
+    "dist",
+    "dist/style.css"
   ],
   "main": "dist/craftbook.umd.cjs",
   "module": "dist/craftbook.js",

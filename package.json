@@ -8,6 +8,10 @@
     "dist",
     "dist/style.css"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Communal/craftbook.git"
+  },
   "main": "dist/craftbook.umd.cjs",
   "module": "dist/craftbook.js",
   "exports": {

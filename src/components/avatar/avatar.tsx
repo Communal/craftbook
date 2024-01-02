@@ -10,7 +10,7 @@ interface AvatarProps extends React.HTMLAttributes<HTMLElement> {
 }
 
 const Avatar = forwardRef<HTMLElement, AvatarProps>(
-  ({ className, fallback, image, size = 'md', filled = false, ...props }) => {
+  ({ className, fallback, image, size = 'md', filled = false, ...props }, ref) => {
     const SizeClassNames = {
       lg: 'avatar-lg',
       md: 'avatar-md',
@@ -19,6 +19,7 @@ const Avatar = forwardRef<HTMLElement, AvatarProps>(
 
     return (
       <RadixAvatar.Root
+        ref={ref}
         className={cn(
           'craftbookAvatar',
           filled && 'craftbookAvatar-filled',

@@ -76,7 +76,7 @@
 
 /* UPPERCASE HEADING STYLES */
 .craftbookUppercaseHeading {
-  @apply uppercase text-[12px] font-semibold;
+  @apply uppercase text-[12px] font-semibold select-none cursor-default;
 }
 
 .uppercaseHeading {

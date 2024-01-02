@@ -34,6 +34,6 @@ export const BadgeWithTextNumber: Story = {
 
 export const BadgeWithIcon: Story = {
   args: {
-    children: "⌘"
+    children: '⌘',
   },
 };

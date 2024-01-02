@@ -1,29 +1,18 @@
-import { cn } from "@/utils";
-import { forwardRef } from "react";
+import { cn } from '@/utils';
+import { forwardRef } from 'react';
 
-interface BadgeProps extends React.HTMLAttributes<HTMLDivElement> { }
+interface BadgeProps extends React.HTMLAttributes<HTMLDivElement> {}
 
 const Badge = forwardRef<HTMLDivElement, BadgeProps>(
-  ({
-    className,
-    children,
-    ...props
-  }) => {
+  ({ className, children, ...props }) => {
     return (
-      <span
-        className={cn("craftbookBadge", className)}
-        {...props}
-      >
+      <span className={cn('craftbookBadge', className)} {...props}>
         {children}
       </span>
-    )
-  }
-)
+    );
+  },
+);
 
-export {
-  Badge
-}
+export { Badge };
 
-export type {
-  BadgeProps
-}
+export type { BadgeProps };

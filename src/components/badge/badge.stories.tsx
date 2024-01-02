@@ -16,18 +16,24 @@ type Story = StoryObj<typeof meta>;
 
 export const BadgeWithText: Story = {
   args: {
-    children: "Badge"
+    children: 'Badge',
   },
 };
 
 export const BadgeWithNumber: Story = {
   args: {
-    children: "12"
+    children: '12',
   },
 };
 
 export const BadgeWithTextNumber: Story = {
   args: {
-    children: "12+ Messages"
+    children: '12+ Messages',
+  },
+};
+
+export const BadgeWithIcon: Story = {
+  args: {
+    children: "⌘"
   },
 };

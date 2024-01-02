@@ -25,11 +25,7 @@ const Card = forwardRef<HTMLDivElement, CardProps>(
     return (
       <div
         ref={ref}
-        className={cn(
-          'craftbookCard',
-          fit && 'w-fit',
-          className,
-        )}
+        className={cn('craftbookCard', fit && 'w-fit', className)}
         {...props}>
         {withHeader && (
           <div className="pb-4">

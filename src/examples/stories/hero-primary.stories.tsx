@@ -13,4 +13,4 @@ export default meta;
 
 type Story = StoryObj<typeof meta>;
 
-export const HeroSectionPrimary: Story = {}
+export const HeroSectionPrimary: Story = {};

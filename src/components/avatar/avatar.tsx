@@ -10,7 +10,10 @@ interface AvatarProps extends React.HTMLAttributes<HTMLElement> {
 }
 
 const Avatar = forwardRef<HTMLElement, AvatarProps>(
-  ({ className, fallback, image, size = 'md', filled = false, ...props }, ref) => {
+  (
+    { className, fallback, image, size = 'md', filled = false, ...props },
+    ref,
+  ) => {
     const SizeClassNames = {
       lg: 'avatar-lg',
       md: 'avatar-md',

@@ -26,7 +26,7 @@ const Card = forwardRef<HTMLDivElement, CardProps>(
       <div
         ref={ref}
         className={cn(
-          'px-[24px] py-[18px] rounded-2xl shadow border-2 border-product-dark',
+          'craftbookCard',
           fit && 'w-fit',
           className,
         )}

@@ -1,8 +1,8 @@
-import { useState } from "react";
-import { PasswordInput } from "@/components";
+import { useState } from 'react';
+import { PasswordInput } from '@/components';
 
 export const PasswordInputExample: React.FunctionComponent = () => {
-  const [passwordInput, setPasswordInput] = useState<string>("");
+  const [passwordInput, setPasswordInput] = useState<string>('');
   return (
     <>
       <PasswordInput
@@ -10,18 +10,19 @@ export const PasswordInputExample: React.FunctionComponent = () => {
         setPasswordInput={setPasswordInput}
       />
     </>
-  )
-}
+  );
+};
 
-export const PasswordInputWithStrengthCheckExample: React.FunctionComponent = () => {
-  const [passwordInput, setPasswordInput] = useState<string>("");
-  return (
-    <>
-      <PasswordInput
-        passwordInput={passwordInput}
-        setPasswordInput={setPasswordInput}
-        withStrengthCheck
-      />
-    </>
-  )
-}
+export const PasswordInputWithStrengthCheckExample: React.FunctionComponent =
+  () => {
+    const [passwordInput, setPasswordInput] = useState<string>('');
+    return (
+      <>
+        <PasswordInput
+          passwordInput={passwordInput}
+          setPasswordInput={setPasswordInput}
+          withStrengthCheck
+        />
+      </>
+    );
+  };

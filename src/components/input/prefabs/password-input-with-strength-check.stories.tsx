@@ -14,4 +14,4 @@ export default meta;
 
 type Story = StoryObj<typeof meta>;
 
-export const PasswordInputWithStrengthCheckExamplePrefab: Story = {}
+export const PasswordInputWithStrengthCheckExamplePrefab: Story = {};

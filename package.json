@@ -1,7 +1,7 @@
 {
   "name": "craftbook",
   "private": false,
-  "version": "1.2.2",
+  "version": "1.2.3",
   "author": "Yash Sehgal <yashsehgal.work@gmail.com>",
   "type": "module",
   "files": [

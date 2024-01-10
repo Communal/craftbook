@@ -16,6 +16,6 @@ type Story = StoryObj<typeof meta>;
 
 export const LinkButtonDefault: Story = {
   args: {
-    children: "Explore"
+    children: 'Explore',
   },
 };

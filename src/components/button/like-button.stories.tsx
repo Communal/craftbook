@@ -24,6 +24,6 @@ export const LikeActionDefault: Story = {
 export const LikeActionWithDefaultLiked: Story = {
   args: {
     count: 12,
-    isLiked: true
+    isLiked: true,
   },
 };

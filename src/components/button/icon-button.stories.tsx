@@ -17,58 +17,58 @@ type Story = StoryObj<typeof meta>;
 
 export const IconButtonDefault: Story = {
   args: {
-    children: <Plus className='w-5 h-5' />,
+    children: <Plus className="w-5 h-5" />,
   },
 };
 
 export const IconButtonPrimary: Story = {
   args: {
-    children: <Plus className='w-5 h-5' />,
-    variant: "primary"
+    children: <Plus className="w-5 h-5" />,
+    variant: 'primary',
   },
 };
 
 export const IconButtonSecondary: Story = {
   args: {
-    children: <Plus className='w-5 h-5' />,
-    variant: "secondary"
+    children: <Plus className="w-5 h-5" />,
+    variant: 'secondary',
   },
 };
 
 export const IconButtonSolid: Story = {
   args: {
-    children: <Plus className='w-5 h-5' />,
-    variant: "solid"
+    children: <Plus className="w-5 h-5" />,
+    variant: 'solid',
   },
 };
 
 export const IconButtonOutline: Story = {
   args: {
-    children: <Plus className='w-5 h-5' />,
-    variant: "outline"
+    children: <Plus className="w-5 h-5" />,
+    variant: 'outline',
   },
 };
 
 export const IconButtonSmall: Story = {
   args: {
-    children: <Plus className='w-5 h-5' />,
-    size: "sm",
-    variant: "primary",
+    children: <Plus className="w-5 h-5" />,
+    size: 'sm',
+    variant: 'primary',
   },
 };
 
 export const IconButtonMedium: Story = {
   args: {
-    children: <Plus className='w-5 h-5' />,
-    size: "md",
-    variant: "primary",
+    children: <Plus className="w-5 h-5" />,
+    size: 'md',
+    variant: 'primary',
   },
 };
 
 export const IconButtonLarge: Story = {
   args: {
-    children: <Plus className='w-5 h-5' />,
-    size: "lg",
-    variant: "primary",
+    children: <Plus className="w-5 h-5" />,
+    size: 'lg',
+    variant: 'primary',
   },
 };

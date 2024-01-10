@@ -18,9 +18,11 @@ type Story = StoryObj<typeof meta>;
 
 export const SidebarOptionExample: Story = {
   args: {
-    children: <>
-      <Home className="w-4 h-4" />
-      <Body size="sm">{"Home"}</Body>
-    </>
-  }
-}
+    children: (
+      <>
+        <Home className="w-4 h-4" />
+        <Body size="sm">{'Home'}</Body>
+      </>
+    ),
+  },
+};

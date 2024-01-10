@@ -17,6 +17,6 @@ type Story = StoryObj<typeof meta>;
 
 export const IconLinkButtonDefault: Story = {
   args: {
-    children: <ArrowRight className='w-4 h-4' />
+    children: <ArrowRight className="w-4 h-4" />,
   },
 };

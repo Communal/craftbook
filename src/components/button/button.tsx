@@ -51,22 +51,26 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>(
   },
 );
 
-type IconButtonGenerics =
-  Pick<ButtonProps, 'variant'>
-  & Pick<ButtonProps, 'size'>
-  & Pick<ButtonProps, 'strech'>;
+type IconButtonGenerics = Pick<ButtonProps, 'variant'> &
+  Pick<ButtonProps, 'size'> &
+  Pick<ButtonProps, 'strech'>;
 
-interface IconButtonProps extends IconButtonGenerics, React.ButtonHTMLAttributes<HTMLButtonElement> { }
+interface IconButtonProps
+  extends IconButtonGenerics,
+    React.ButtonHTMLAttributes<HTMLButtonElement> {}
 
 const IconButton = forwardRef<HTMLButtonElement, IconButtonProps>(
-  ({
-    children,
-    size = "md",
-    variant = "primary",
-    strech = false,
-    className,
-    ...props
-  }, ref) => {
+  (
+    {
+      children,
+      size = 'md',
+      variant = 'primary',
+      strech = false,
+      className,
+      ...props
+    },
+    ref,
+  ) => {
     return (
       <button
         ref={ref}
@@ -86,13 +90,12 @@ const IconButton = forwardRef<HTMLButtonElement, IconButtonProps>(
           props.disabled && 'button-disabled',
           className,
         )}
-        {...props}
-      >
+        {...props}>
         {children}
       </button>
-    )
-  }
-)
+    );
+  },
+);
 
 export { Button, IconButton };
 

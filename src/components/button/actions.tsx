@@ -68,7 +68,7 @@ export const ShareButton = forwardRef<
             <Share className="w-4 h-4" />
           </button>
         </DropdownMenuTrigger>
-        <DropdownMenuContent>
+        <DropdownMenuContent className='bg-white'>
           <DropdownMenuLabel>Share via</DropdownMenuLabel>
           <DropdownMenuItem>Twitter/X</DropdownMenuItem>
           <DropdownMenuItem>Instagram</DropdownMenuItem>

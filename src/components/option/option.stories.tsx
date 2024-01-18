@@ -16,13 +16,13 @@ type Story = StoryObj<typeof meta>;
 
 export const OptionDefault: Story = {
   args: {
-    children: 'Science and Tech'
+    children: 'Science and Tech',
   },
 };
 
 export const OptionDefaultSelected: Story = {
   args: {
     children: 'Science and Tech',
-    defaultSelected: true
+    defaultSelected: true,
   },
 };

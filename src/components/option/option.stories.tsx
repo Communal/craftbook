@@ -26,3 +26,10 @@ export const OptionDefaultSelected: Story = {
     defaultSelected: true,
   },
 };
+
+export const OptionDefaultWithAlert: Story = {
+  args: {
+    children: "Option with alert",
+    onClick: () => alert("Option is clicked")
+  }
+}

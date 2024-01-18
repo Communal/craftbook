@@ -7,15 +7,13 @@ interface OptionProps extends InputHTMLAttributes<HTMLInputElement> {
 }
 
 const Option = forwardRef<HTMLInputElement, OptionProps>(
-  ({ className, defaultSelected = false, children, ...props }, ref) => {
+  ({ className, defaultSelected = false, children, onClick, ...props }, ref) => {
     const [selected, setSelected] = useState<boolean>(defaultSelected);
 
-    const handleOptionClick = (
-      e: MouseEvent<HTMLDivElement & HTMLInputElement>,
-    ): void => {
+    const handleOptionClick = (e: React.MouseEvent<HTMLInputElement>): void => {
       setSelected(!selected);
       // calling the prop.onClick if any
-      props.onClick && props.onClick(e);
+      onClick && onClick(e);
     };
 
     return (

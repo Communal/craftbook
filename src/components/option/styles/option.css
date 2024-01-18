@@ -1,11 +1,13 @@
 .craftbookOption {
-  @apply px-3 py-1.5 rounded-lg border;
+  @apply px-3 py-1.5 rounded-lg border cursor-pointer flex flex-row items-center justify-start gap-2 select-none;
 }
 
 .optionSelected {
   @apply border-transparent bg-product-secondary text-white;
+  @apply hover:bg-product-secondary-dimmed;
 }
 
 .optionUnSelected {
   @apply text-product-dark bg-transparent;
+  @apply hover:bg-neutral-50;
 }

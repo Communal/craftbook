@@ -19,3 +19,10 @@ export const OptionDefault: Story = {
     children: 'Science and Tech'
   },
 };
+
+export const OptionDefaultSelected: Story = {
+  args: {
+    children: 'Science and Tech',
+    defaultSelected: true
+  },
+};

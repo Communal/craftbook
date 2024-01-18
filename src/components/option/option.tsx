@@ -1,13 +1,16 @@
 import { cn } from '@/utils';
 import { Check } from 'lucide-react';
-import { InputHTMLAttributes, MouseEvent, forwardRef, useState } from 'react';
+import { InputHTMLAttributes, forwardRef, useState } from 'react';
 
 interface OptionProps extends InputHTMLAttributes<HTMLInputElement> {
   defaultSelected?: boolean;
 }
 
 const Option = forwardRef<HTMLInputElement, OptionProps>(
-  ({ className, defaultSelected = false, children, onClick, ...props }, ref) => {
+  (
+    { className, defaultSelected = false, children, onClick, ...props },
+    ref,
+  ) => {
     const [selected, setSelected] = useState<boolean>(defaultSelected);
 
     const handleOptionClick = (e: React.MouseEvent<HTMLInputElement>): void => {

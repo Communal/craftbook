@@ -16,7 +16,7 @@ const Option = forwardRef<HTMLInputElement, OptionProps>(
     const handleOptionClick = (e: React.MouseEvent<HTMLInputElement>): void => {
       setSelected(!selected);
       // calling the prop.onClick if any
-      onClick && onClick(e);
+      onClick?.(e);
     };
 
     return (

@@ -5,35 +5,42 @@ import { cn } from "@/utils";
 interface FollowButtonProps extends ButtonProps {
   isFollowing?: boolean;
   onFollow: () => void;
-  onUnFollow: () => void;
+  onUnfollow: () => void;
 }
 
 const FollowButton = forwardRef<HTMLButtonElement, FollowButtonProps>(
-  ({ className, isFollowing = false, ...props }, ref) => {
+  ({ className, isFollowing = false, onClick, onMouseLeave, onMouseEnter, onFollow, onUnfollow, ...props }, ref) => {
     const [buttonContext, setButtonContext] = useState<"follow" | "following" | "unfollow">("follow");
 
     useEffect(() => {
-      if (isFollowing) setButtonContext("following")
-    }, []);
+      if (isFollowing) {
+        setButtonContext("following");
+      }
+    }, [isFollowing]);
 
-    const handleFollowButtonClick = () => {
+    const handleFollowButtonClick = (e: React.MouseEvent<HTMLButtonElement>) => {
       if (buttonContext === "follow") {
         setButtonContext("following");
+        onFollow?.();
       } else if (buttonContext === "unfollow") {
         setButtonContext("follow");
+        onUnfollow?.();
       }
+      onClick?.(e);
     }
 
-    const handleFollowButtonMouseEnter = () => {
+    const handleFollowButtonMouseEnter = (e: React.MouseEvent<HTMLButtonElement>) => {
       if (buttonContext === "following") {
         setButtonContext("unfollow");
       }
+      onMouseEnter?.(e);
     }
 
-    const handleFollowButtonMouseLeave = () => {
+    const handleFollowButtonMouseLeave = (e: React.MouseEvent<HTMLButtonElement>) => {
       if (buttonContext === "unfollow") {
         setButtonContext("following");
       }
+      onMouseLeave?.(e);
     }
 
     return (
@@ -41,12 +48,7 @@ const FollowButton = forwardRef<HTMLButtonElement, FollowButtonProps>(
         ref={ref}
         {...props}
         variant={buttonContext === "follow" ? "secondary" : "outline"}
-        className={
-          cn(
-            "capitalize",
-            buttonContext === "unfollow" && "hover:bg-red-50 hover:border-red-300 hover:text-red-500",
-            className
-          )}
+        className={cn("capitalize", buttonContext === "unfollow" && "hover:bg-red-50 hover:border-red-300 hover:text-red-500", className)}
         onClick={handleFollowButtonClick}
         onMouseEnter={handleFollowButtonMouseEnter}
         onMouseLeave={handleFollowButtonMouseLeave}

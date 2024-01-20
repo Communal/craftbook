@@ -4,9 +4,7 @@ import { TabMenu } from '.';
 const meta: Meta<typeof TabMenu> = {
   title: 'UI Components/Tab Menu',
   component: TabMenu,
-  parameters: {
-    layout: 'centered',
-  },
+  parameters: {},
   tags: ['autodocs'],
 };
 
@@ -17,5 +15,12 @@ type Story = StoryObj<typeof meta>;
 export const TabMenuDefault: Story = {
   args: {
     options: ['Timeline', 'Members', 'Inititives', 'Calendar'],
+  },
+};
+
+export const TabMenuDefaultWithStretch: Story = {
+  args: {
+    options: ['Timeline', 'Members', 'Inititives', 'Calendar'],
+    stretch: true,
   },
 };

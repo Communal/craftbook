@@ -6,6 +6,7 @@ interface TabMenuProps extends React.HTMLAttributes<HTMLDivElement> {
   options: string[];
   currentOption: string;
   stretch?: boolean;
+  updateSelection: (option: string) => void;
 }
 
 interface TabMenuOptionProps
@@ -17,7 +18,14 @@ interface TabMenuOptionProps
 
 const TabMenu = forwardRef<HTMLDivElement, TabMenuProps>(
   (
-    { className, options, currentOption = '', stretch = false, ...props },
+    {
+      className,
+      options,
+      currentOption = '',
+      stretch = false,
+      updateSelection,
+      ...props
+    },
     ref,
   ) => {
     const [selectedOption, setSelectedOption] = useState<string>(
@@ -45,6 +53,7 @@ const TabMenu = forwardRef<HTMLDivElement, TabMenuProps>(
                 key={index}
                 onClick={() => {
                   setSelectedOption(option);
+                  updateSelection(option);
                 }}
                 isSelected={option === selectedOption}
               />

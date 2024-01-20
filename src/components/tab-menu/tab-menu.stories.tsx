@@ -16,6 +16,6 @@ type Story = StoryObj<typeof meta>;
 
 export const TabMenuDefault: Story = {
   args: {
-    options: ["Timeline", "Members", "Inititives", "Calendar"]
-  }
-}
+    options: ['Timeline', 'Members', 'Inititives', 'Calendar'],
+  },
+};

@@ -32,10 +32,10 @@ const TabMenu = forwardRef<HTMLDivElement, TabMenuProps>(
         )}>
         <Grid
           ref={ref}
-          className={cn('w-fit', stretch && "w-full", className)}
+          className={cn('w-fit', stretch && 'w-full', className)}
           cols={options.length}
           alignItems="center"
-          justifyContent={"center"}
+          justifyContent={'center'}
           {...props}>
           {options.map((option, index) => {
             return (
@@ -65,7 +65,7 @@ const TabMenuOption = forwardRef<HTMLButtonElement, TabMenuOptionProps>(
           'tab-menu-option px-3 py-1.5 transition-all',
           !isSelected && 'hover:border-b-2 hover:border-black/10',
           isSelected &&
-          'border-b-2 border-b-black drop-shadow-lg before:outline-none',
+            'border-b-2 border-b-black drop-shadow-lg before:outline-none',
           className,
         )}
         aria-label={label}

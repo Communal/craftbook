@@ -21,6 +21,6 @@ export const SidebarMenuDefaul: Story = {
       minWidth: '300px',
       width: 'fit-content',
       maxWidth: '46px',
-    }
-  }
+    },
+  },
 };

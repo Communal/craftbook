@@ -32,7 +32,10 @@ export const LikeButton = forwardRef<
   };
 
   return (
-    <span className="flex flex-row items-center gap-0.5 w-fit h-fit" ref={ref} {...props}>
+    <span
+      className="flex flex-row items-center gap-0.5 w-fit h-fit"
+      ref={ref}
+      {...props}>
       <motion.button
         className={cn(
           'p-1 rounded-full hover:bg-black/5 active:bg-black/10',
@@ -40,13 +43,12 @@ export const LikeButton = forwardRef<
         )}
         onClick={handleLikeAction}
         whileTap={{
-          scale: 2
+          scale: 2,
         }}
         transition={{
-          type: "spring",
-          bounce: 0.65
-        }}
-      >
+          type: 'spring',
+          bounce: 0.65,
+        }}>
         <Heart
           className={cn(
             'w-3.5 h-3.5',
@@ -102,11 +104,7 @@ export const CommentButton = forwardRef<
           className,
         )}
         {...props}>
-        <MessageCircle
-          className={cn(
-            'w-3.5 h-3.5',
-          )}
-        />
+        <MessageCircle className={cn('w-3.5 h-3.5')} />
       </button>
       <span className="comment-count-wrapper text-sm text-neutral-800">
         {count}

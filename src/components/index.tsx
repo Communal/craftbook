@@ -9,3 +9,4 @@ export * from './card';
 export * from './dropdown-menu';
 export * from './option';
 export * from './tab-menu';
+export * from './sidebar-menu';

@@ -73,8 +73,7 @@ const TabMenuOption = forwardRef<HTMLButtonElement, TabMenuOptionProps>(
         className={cn(
           'tab-menu-option px-2 py-1 transition-all text-sm rounded-md',
           !isSelected && 'hover:bg-neutral-100',
-          isSelected &&
-          'bg-neutral-200',
+          isSelected && 'bg-neutral-200',
           className,
         )}
         aria-label={label}

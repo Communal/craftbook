@@ -52,7 +52,11 @@ export const Post = forwardRef<HTMLDivElement, PostProps>(
               className={cn(
                 'post-user-details-wrapper flex flex-row items-start justify-start gap-2',
               )}>
-              <Avatar fallback={fullName.firstName[0]} size="sm" image={userProfile} />
+              <Avatar
+                fallback={fullName.firstName[0]}
+                size="sm"
+                image={userProfile}
+              />
               <div>
                 <h3 className="fullName-wrapper font-medium text-base">
                   {fullName.firstName} {fullName.lastName || ''}
@@ -66,15 +70,15 @@ export const Post = forwardRef<HTMLDivElement, PostProps>(
           </div>
           {(props.onlyCommunityMembersCanComment ||
             props.onlyCommunityMembersCanLike) && (
-              <Callout type="message" className="ml-12 my-2">
-                {props.onlyCommunityMembersCanComment &&
-                  props.onlyCommunityMembersCanLike
-                  ? 'Only community members can like and comment to this post'
-                  : props.onlyCommunityMembersCanComment
-                    ? 'Only community members can comment to this post'
-                    : 'Only community members can like this post'}
-              </Callout>
-            )}
+            <Callout type="message" className="ml-12 my-2">
+              {props.onlyCommunityMembersCanComment &&
+              props.onlyCommunityMembersCanLike
+                ? 'Only community members can like and comment to this post'
+                : props.onlyCommunityMembersCanComment
+                  ? 'Only community members can comment to this post'
+                  : 'Only community members can like this post'}
+            </Callout>
+          )}
           <div
             className={cn(
               'post-actions-wrapper grid grid-cols-4 justify-around px-10 mt-4',
@@ -84,8 +88,10 @@ export const Post = forwardRef<HTMLDivElement, PostProps>(
             <ShareButton />
             <SaveButton isSavedAlready={isSaved} />
           </div>
-          <div className='text-neutral-400 text-xs mt-3'>
-            {`Posted on ${new Date(postedAt).getDate()} ${getMonthNameByIndex(new Date(postedAt).getMonth())?.short}, ${new Date(postedAt).getFullYear()}`}
+          <div className="text-neutral-400 text-xs mt-3">
+            {`Posted on ${new Date(postedAt).getDate()} ${getMonthNameByIndex(
+              new Date(postedAt).getMonth(),
+            )?.short}, ${new Date(postedAt).getFullYear()}`}
           </div>
         </div>
         {comments.length ? (

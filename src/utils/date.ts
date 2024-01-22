@@ -22,3 +22,14 @@ export function getMonthNameByIndex(
     return null;
   }
 }
+
+export function checkIfTimeMatches(timestamp: string) {
+  const currentHour = new Date().getUTCHours();
+  const currentMinute = new Date().getUTCMinutes();
+  const currentSeconds = new Date().getUTCSeconds();
+  const timeToMatch_Hour = new Date(timestamp).getUTCHours();
+  const timeToMatch_Minute = new Date(timestamp).getUTCMinutes();
+  const timeToMatch_Second = new Date(timestamp).getSeconds();
+
+  return 
+}

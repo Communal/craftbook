@@ -19,7 +19,7 @@ export const HackathonTimelineDefaultExample: Story = {
   args: {
     children: <HackathonTimelineExample />,
     style: {
-      width: '640px'
+      width: '640px',
     },
-  }
-}
+  },
+};

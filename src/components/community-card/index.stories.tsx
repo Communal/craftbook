@@ -16,9 +16,9 @@ type Story = StoryObj<typeof meta>;
 
 export const CommunityCardExample: Story = {
   args: {
-    title: "Communal Engineering",
-    description: "Engineering updates from the team of communal",
-    communityName: "communal-engineering",
-    logo: "https://pbs.twimg.com/profile_images/1746968522008498176/Ev8bVOkA_400x400.jpg"
-  }
-}
+    title: 'Communal Engineering',
+    description: 'Engineering updates from the team of communal',
+    communityName: 'communal-engineering',
+    logo: 'https://pbs.twimg.com/profile_images/1746968522008498176/Ev8bVOkA_400x400.jpg',
+  },
+};

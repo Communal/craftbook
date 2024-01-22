@@ -14,5 +14,5 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const SwitchDefault: Story = {
-  args: {}
-}
+  args: {},
+};

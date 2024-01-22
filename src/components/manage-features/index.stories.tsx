@@ -19,7 +19,7 @@ export const HackathonTimelineDefaultExample: Story = {
   args: {
     children: <ManageFeatureExample />,
     style: {
-      width: '380px'
+      width: '380px',
     },
-  }
-}
+  },
+};

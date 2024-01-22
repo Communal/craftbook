@@ -1,11 +1,11 @@
-import { ManageFeatureOption, ManageFeatures } from "@/components";
+import { ManageFeatureOption, ManageFeatures } from '@/components';
 
 export default function ManageFeatureExample() {
   return (
-    <ManageFeatures title="Account Settings" description="User account related settings">
-      <ManageFeatureOption isOn={false}>
-        Private Account
-      </ManageFeatureOption>
+    <ManageFeatures
+      title="Account Settings"
+      description="User account related settings">
+      <ManageFeatureOption isOn={false}>Private Account</ManageFeatureOption>
       <ManageFeatureOption isOn={false}>
         Only followers can see your posts
       </ManageFeatureOption>
@@ -16,5 +16,5 @@ export default function ManageFeatureExample() {
         Show DOB on profile
       </ManageFeatureOption>
     </ManageFeatures>
-  )
+  );
 }

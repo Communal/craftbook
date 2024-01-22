@@ -12,3 +12,5 @@ export * from './tab-menu';
 export * from './sidebar-menu';
 export * from './hackathon-timeline';
 export * from './switch';
+export * from './manage-features';
+export * from './community-card';

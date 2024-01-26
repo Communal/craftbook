@@ -35,7 +35,7 @@ const TabMenu = forwardRef<HTMLDivElement, TabMenuProps>(
     return (
       <Box
         className={cn(
-          'border-b',
+          'border-b pb-2',
           stretch && 'flex flex-row items-center justify-center',
         )}>
         <Grid
@@ -71,10 +71,9 @@ const TabMenuOption = forwardRef<HTMLButtonElement, TabMenuOptionProps>(
       <button
         ref={ref}
         className={cn(
-          'tab-menu-option px-3 py-1.5 transition-all',
-          !isSelected && 'hover:border-b-2 hover:border-black/10',
-          isSelected &&
-            'border-b-2 border-b-black drop-shadow-lg before:outline-none',
+          'tab-menu-option px-2 py-1 transition-all text-sm rounded-md',
+          !isSelected && 'hover:bg-neutral-100',
+          isSelected && 'bg-neutral-200',
           className,
         )}
         aria-label={label}
